@@ -87,7 +87,7 @@ export default function Home() {
               <DarkAndLightBtn/>
             </section>
             {/* search and details section */}
-            <section className="flex flex-col gap-6">
+            <section className="flex flex-col gap-4">
                {/* search and btn */}
                <SearchAndBtn onChange={(e)=>setUserName(e.target.value)} onSubmit={handleSubmit} value={userName}/> 
 
@@ -199,10 +199,15 @@ export default function Home() {
                   </section>
                
               </main>
-                  }
+              
+               }
+                  <section className="w-full ">
+                  <p className="pl-[230px] text-slate-500">@ashimdas</p>
+                </section>
             </section>
 
         </div>
+       
        </div>
   );
 }
