@@ -53,7 +53,7 @@ type GitHubUser = {
 
 export default function Home() {
 
-  const [userName, setUserName] = useState("octocat")
+  const [userName, setUserName] = useState("")
 
   const { isPending, error, data, refetch} = useQuery<GitHubUser>({
     queryKey: ['repoData'],
@@ -79,7 +79,7 @@ export default function Home() {
 
   return (
        <div className="flex min-h-screen w-full p-1.5 sm:p-4 pt-10 sm:pt-12 transition-all dark:bg-slate-900">
-        {/* container */}
+        {/* container */} 
         <div className="mx-auto flex w-full max-w-[600px] flex-col gap-8 rounded p-2 ">
             {/* 1st section */}
             <section className="flex justify-between gap-3">
